@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08131f">
+  <title>Dark Signal | Cyber Defender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient-grid"></div>
+  <div class="scanline"></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-action="home" aria-label="Cyber Defender home">
+      <span class="brand-mark"><span class="brand-mark-inner">+</span></span>
+      <span><strong>DARK SIGNAL</strong><small>CYBER DEFENDER</small></span>
+    </a>
+    <div class="status-pill"><span class="status-dot"></span><span>AGENCY NETWORK</span><b>ONLINE</b></div>
+    <div class="top-actions">
+      <button class="icon-button" data-action="open-howto" aria-label="How to play" title="How to play">?</button>
+      <button class="icon-button" data-action="toggle-sound" aria-label="Toggle sound" title="Toggle sound">◖</button>
+    </div>
+  </header>
+
+  <main id="app" class="app-shell"></main>
+
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <div id="modal-region"></div>
+  <script src="game.js"></script>
+</body>
+</html>
